@@ -1,0 +1,38 @@
+//! import google fonts
+// @import url('https://fonts.googleapis.com/css?family=');
+// OR use @font-face like below
+
+//! import a custom font below
+@font-face {
+  font-family: 'Butler Black';
+  font-display: fallback;
+  font-weight: normal;
+  font-style: normal;
+  src:
+    local('Butler Black Webfont'), /* Checks if font is on users computer */
+    local('Butler Black'), /* Checks if font is on users computer */
+    url('fonts/butler_black-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/butler_black-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+//! set font variables
+$font-heading: 'Butler Black', Fallback, 'Georgia', serif;
+$font-body: sans-serif;
+
+
+html {
+  font-size: 62.5%; // 1rem = 10px, 3.5rem = 35px;
+}
+
+body {
+  font-family: $font-body;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $black;
+}
+
+h1 {
+  font-family: $font-heading, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}

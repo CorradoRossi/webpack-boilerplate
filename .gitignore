@@ -1,0 +1,5 @@
+/node_modules
+/dist
+/.vscode
+/anyotherjunk
+.DS_Store
